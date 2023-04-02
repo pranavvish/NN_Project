@@ -62,9 +62,9 @@ def load_data_FD002():
     columns += ["s_{i}" for i in range(1, 22)]
 
     # Load the data
-    x_train = pd.read_csv(path + "train_FD001.txt", delim_whitespace=True, header=None, names=columns)
-    x_test = pd.read_csv(path + "test_FD001.txt", delim_whitespace=True, header=None, names=columns)
-    y_test = pd.read_csv(path + "RUL_FD001.txt", delim_whitespace=True, header=None, names=["RUL"])
+    x_train = pd.read_csv(path + "train_FD002.txt", delim_whitespace=True, header=None, names=columns)
+    x_test = pd.read_csv(path + "test_FD002.txt", delim_whitespace=True, header=None, names=columns)
+    y_test = pd.read_csv(path + "RUL_FD002.txt", delim_whitespace=True, header=None, names=["RUL"])
 
     # # Remove non-informative sensory readings and settings from the data
     # drop_cols = ["setting_1", "setting_2", "setting_3", "s_1", "s_5", "s_6", "s_10", "s_16", "s_18", "s_19"]
@@ -128,9 +128,9 @@ def load_data_FD004():
     columns += ["s_{i}" for i in range(1, 22)]
 
     # Load the data
-    x_train = pd.read_csv(path + "train_FD003.txt", delim_whitespace=True, header=None, names=columns)
-    x_test = pd.read_csv(path + "test_FD003.txt", delim_whitespace=True, header=None, names=columns)
-    y_test = pd.read_csv(path + "RUL_FD003.txt", delim_whitespace=True, header=None, names=["RUL"])
+    x_train = pd.read_csv(path + "train_FD004.txt", delim_whitespace=True, header=None, names=columns)
+    x_test = pd.read_csv(path + "test_FD004.txt", delim_whitespace=True, header=None, names=columns)
+    y_test = pd.read_csv(path + "RUL_FD004.txt", delim_whitespace=True, header=None, names=["RUL"])
 
     # # Remove non-informative sensory readings and settings from the data
     # drop_cols = ["setting_1", "setting_2", "setting_3", "s_1", "s_5", "s_16", "s_18", "s_19"]
