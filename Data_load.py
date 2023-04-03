@@ -23,10 +23,10 @@ def normalize_data(df):
 
 def load_data_FD001():
     # Define the file path and column names
-    path = "Data/Cmaps_Data/"
+    path = "./Data/"
     columns = ["unit_nr", "time_cycles", "setting_1", "setting_2", "setting_3"]
     # Only 21 sensor readings are available
-    columns += ["s_{i}" for i in range(1, 22)]
+    columns += [f"s_{i}" for i in range(1, 22)]
 
     # Load the data
     x_train = pd.read_csv(path + "train_FD001.txt", delim_whitespace=True, header=None, names=columns)
@@ -56,10 +56,10 @@ def load_data_FD001():
 
 def load_data_FD002():
     # Define the file path and column names
-    path = "Data/Cmaps_Data/"
+    path = "./Data/"
     columns = ["unit_nr", "time_cycles", "setting_1", "setting_2", "setting_3"]
     # Only 21 sensor readings are available
-    columns += ["s_{i}" for i in range(1, 22)]
+    columns += [f"s_{i}" for i in range(1, 22)]
 
     # Load the data
     x_train = pd.read_csv(path + "train_FD002.txt", delim_whitespace=True, header=None, names=columns)
@@ -89,10 +89,10 @@ def load_data_FD002():
 
 def load_data_FD003():
     # Define the file path and column names
-    path = "Data/Cmaps_Data/"
+    path = "./Data/"
     columns = ["unit_nr", "time_cycles", "setting_1", "setting_2", "setting_3"]
     # Only 21 sensor readings are available
-    columns += ["s_{i}" for i in range(1, 22)]
+    columns += [f"s_{i}" for i in range(1, 22)]
 
     # Load the data
     x_train = pd.read_csv(path + "train_FD003.txt", delim_whitespace=True, header=None, names=columns)
@@ -122,10 +122,10 @@ def load_data_FD003():
 
 def load_data_FD004():
     # Define the file path and column names
-    path = "Data/Cmaps_Data/"
+    path = "./Data/"
     columns = ["unit_nr", "time_cycles", "setting_1", "setting_2", "setting_3"]
     # Only 21 sensor readings are available
-    columns += ["s_{i}" for i in range(1, 22)]
+    columns += [f"s_{i}" for i in range(1, 22)]
 
     # Load the data
     x_train = pd.read_csv(path + "train_FD004.txt", delim_whitespace=True, header=None, names=columns)
